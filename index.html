@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicount Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="discount-calculator">
+            <h1 class="app-name">Discount Calculator</h1>
+            <div class="product-info">
+                <img src="./product.jpg" alt="">
+                <h2 class="product-name">Name: Rolex Watch</h2>
+                <h2 class="product-price">Price: <span id="product-price">5000</span>$</h2>
+                <p class="cupon-info">Use coupon to get 30% off. coupon: <span>get30</span></p>
+            </div>
+            <div class="Product-discount">
+                <input id="coupon-field" class="coupon-field" type="text" placeholder="Enter Your Coupon Code!">
+                <button class="apply-btn" id="apply-btn">Apply</button>
+            </div>
+            <div id="error">
+                <p id="error-msg"></p>
+            </div>
+            <div class="order-area">
+                <div class="price">
+                    <p>Price</p>
+                    <p>5000 $</p>
+                </div>
+                <div class="tax">
+                    <p>Discount</p>
+                    <p><span id="discount-field">00</span> $</p>
+                </div>
+                <div class="tax">
+                    <p>Total</p>
+                    <p><span id="total-amount">5000</span> $</p>
+                </div>
+            </div>
+            <button class="btn-order-now">Order Now</button>
+        </div>
+    </section>
+<script src="./app.js"></script>
+</body>
+</html>
